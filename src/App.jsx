@@ -1,7 +1,7 @@
 // PropuestaApptiva - Prueba de Integración con MySQL
 // Desarrollado por: Andres_Patiño
 import React, { useState, useEffect } from 'react';
-import './App.css'; // Si tienes estilos personalizados
+import './App.css';
 
 const api = import.meta.env.VITE_API_URL;
 
