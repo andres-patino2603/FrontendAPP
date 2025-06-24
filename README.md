@@ -113,8 +113,7 @@ Puedes realizar pruebas buscando por cédula desde el buscador del frontend.
 -Notificaciones automáticas por email o SMS.
 
 
-## 🖼️ Capturas de pantalla (opcional)
-Puedes agregar capturas aquí para mostrar el funcionamiento visual de la app.
+## 🖼️ Capturas de pantalla 
 
 ## 📩 Contacto
 ## 📧 andrespatino.dev@gmail.com
