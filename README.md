@@ -103,10 +103,15 @@ Puedes realizar pruebas buscando por cédula desde el buscador del frontend.
 
 ## 🎯 Mejoras propuestas
 -Autenticación con roles (asesor, admin).
+
 -Historial de pagos y cálculo de amortizaciones.
+
 -Dashboard con métricas visuales y gráficas.
+
 -Exportación de reportes a PDF y Excel.
+
 -Notificaciones automáticas por email o SMS.
+
 
 ## 🖼️ Capturas de pantalla (opcional)
 Puedes agregar capturas aquí para mostrar el funcionamiento visual de la app.
