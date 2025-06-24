@@ -2,41 +2,81 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+section {
+  background: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+  color: #2f2f2f;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fffefb;
+}
+
+button {
+  grid-column: span 2;
+  padding: 0.8rem;
+  background-color: #6c8b6f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form button {
+  grid-column: 1 / -1; /* Ocupar todas las columnas */
+  justify-self: center;
+  width: 200px; /* Puedes ajustar el ancho */
+}
+
+
+button:hover {
+  background-color: #567459;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  background-color: #fdfdfc;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #dcdcdc;
   text-align: center;
+  color: #2f2f2f;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+thead {
+  background-color: #6c8b6f;
+  color: white;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+tbody tr:nth-child(even) {
+  background-color: #e9f1ec;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+tbody tr:nth-child(odd) {
+  background-color: #fdfdfc;
 }
