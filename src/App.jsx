@@ -1,7 +1,9 @@
 // PropuestaApptiva - Prueba de Integración con MySQL
 // Desarrollado por: Andres_Patiño
 import React, { useState, useEffect } from 'react';
-import './App.css'; // Importa tu archivo CSS personalizado si es necesario
+import './App.css'; // Si tienes estilos personalizados
+
+const api = import.meta.env.VITE_API_URL;
 
 export default function App() {
   const [cliente, setCliente] = useState({ cedula: '', nombre: '', correo: '', edad: '' });
@@ -14,7 +16,7 @@ export default function App() {
 
   const handleClienteSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:5000/api/clientes', {
+    const res = await fetch(`${api}/api/clientes`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(cliente)
@@ -26,7 +28,7 @@ export default function App() {
 
   const handleCreditoSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:5000/api/creditos', {
+    const res = await fetch(`${api}/api/creditos`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(credito)
@@ -36,7 +38,7 @@ export default function App() {
   };
 
   const buscarCliente = async () => {
-    const res = await fetch(`http://localhost:5000/api/clientes?cedula=${cedulaBuscar}`);
+    const res = await fetch(`${api}/api/clientes?cedula=${cedulaBuscar}`);
     const data = await res.json();
     if (res.ok) {
       setClienteIdExistente(data.id);
@@ -51,7 +53,7 @@ export default function App() {
   const handleNuevoCreditoSubmit = async (e) => {
     e.preventDefault();
     if (!clienteIdExistente) return alert('Primero busca un cliente válido');
-    const res = await fetch('http://localhost:5000/api/creditos', {
+    const res = await fetch(`${api}/api/creditos`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...nuevoCredito, cliente_id: clienteIdExistente })
@@ -65,7 +67,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/clientes_creditos')
+    fetch(`${api}/api/clientes_creditos`)
       .then(res => res.json())
       .then(setClientesCreditos);
   }, []);
