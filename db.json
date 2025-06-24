@@ -1,0 +1,26 @@
+{
+  "clientes": [
+    { "id": 1, "nombre": "Carlos Pérez", "email": "carlos.perez@mail.com", "cedula": "1234567891", "telefono": "0991234561", "fechaDeRegistro": "2024-06-01" },
+    { "id": 2, "nombre": "Ana Torres", "email": "ana.torres@mail.com", "cedula": "1234567892", "telefono": "0991234562", "fechaDeRegistro": "2024-06-02" },
+    { "id": 3, "nombre": "Luis Gómez", "email": "luis.gomez@mail.com", "cedula": "1234567893", "telefono": "0991234563", "fechaDeRegistro": "2024-06-03" },
+    { "id": 4, "nombre": "María López", "email": "maria.lopez@mail.com", "cedula": "1234567894", "telefono": "0991234564", "fechaDeRegistro": "2024-06-04" },
+    { "id": 5, "nombre": "Pedro Ruiz", "email": "pedro.ruiz@mail.com", "cedula": "1234567895", "telefono": "0991234565", "fechaDeRegistro": "2024-06-05" },
+    { "id": 6, "nombre": "Lucía Castro", "email": "lucia.castro@mail.com", "cedula": "1234567896", "telefono": "0991234566", "fechaDeRegistro": "2024-06-06" },
+    { "id": 7, "nombre": "Jorge Herrera", "email": "jorge.herrera@mail.com", "cedula": "1234567897", "telefono": "0991234567", "fechaDeRegistro": "2024-06-07" },
+    { "id": 8, "nombre": "Sofía Morales", "email": "sofia.morales@mail.com", "cedula": "1234567898", "telefono": "0991234568", "fechaDeRegistro": "2024-06-08" },
+    { "id": 9, "nombre": "Miguel Díaz", "email": "miguel.diaz@mail.com", "cedula": "1234567899", "telefono": "0991234569", "fechaDeRegistro": "2024-06-09" },
+    { "id": 10, "nombre": "Valeria Jiménez", "email": "valeria.jimenez@mail.com", "cedula": "1234567800", "telefono": "0991234570", "fechaDeRegistro": "2024-06-10" }
+  ],
+  "analisis_credito": [
+    { "id": 1, "idcliente": 1, "fecha_analisis": "2024-06-11", "puntaje_credito": 720, "ingresos_mensuales": 1500, "deudas_actuales": 200, "estado_credito": "aprobado", "observaciones": "Buen historial" },
+    { "id": 2, "idcliente": 2, "fecha_analisis": "2024-06-12", "puntaje_credito": 650, "ingresos_mensuales": 1200, "deudas_actuales": 400, "estado_credito": "aprobado", "observaciones": "Ingresos estables" },
+    { "id": 3, "idcliente": 3, "fecha_analisis": "2024-06-13", "puntaje_credito": 580, "ingresos_mensuales": 900, "deudas_actuales": 600, "estado_credito": "no aprobado", "observaciones": "Deudas elevadas" },
+    { "id": 4, "idcliente": 4, "fecha_analisis": "2024-06-14", "puntaje_credito": 700, "ingresos_mensuales": 2000, "deudas_actuales": 100, "estado_credito": "aprobado", "observaciones": "Excelente capacidad de pago" },
+    { "id": 5, "idcliente": 5, "fecha_analisis": "2024-06-15", "puntaje_credito": 610, "ingresos_mensuales": 1100, "deudas_actuales": 300, "estado_credito": "aprobado", "observaciones": "Historial aceptable" },
+    { "id": 6, "idcliente": 6, "fecha_analisis": "2024-06-16", "puntaje_credito": 540, "ingresos_mensuales": 800, "deudas_actuales": 700, "estado_credito": "no aprobado", "observaciones": "Ingresos bajos" },
+    { "id": 7, "idcliente": 7, "fecha_analisis": "2024-06-17", "puntaje_credito": 680, "ingresos_mensuales": 1700, "deudas_actuales": 250, "estado_credito": "aprobado", "observaciones": "Buen manejo de crédito" },
+    { "id": 8, "idcliente": 8, "fecha_analisis": "2024-06-18", "puntaje_credito": 600, "ingresos_mensuales": 1000, "deudas_actuales": 500, "estado_credito": "no aprobado", "observaciones": "Deudas recientes" },
+    { "id": 9, "idcliente": 9, "fecha_analisis": "2024-06-19", "puntaje_credito": 730, "ingresos_mensuales": 2100, "deudas_actuales": 150, "estado_credito": "aprobado", "observaciones": "Excelente perfil" },
+    { "id": 10, "idcliente": 10, "fecha_analisis": "2024-06-20", "puntaje_credito": 560, "ingresos_mensuales": 950, "deudas_actuales": 650, "estado_credito": "no aprobado", "observaciones": "Riesgo alto" }
+  ]
+}
